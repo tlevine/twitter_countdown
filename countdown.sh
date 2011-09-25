@@ -10,7 +10,8 @@ hours=$(( $seconds_diff/3600 ))
 days=$(( $hours/24 ))
 
 #text="$1"
-text="$days days" #, $hours hours"
+#text="$days days" #, $hours hours"
+text="$days days, $hours hours"
 
 echo $text
 curl --basic --user $username:$password --data status="$text" "$url"
