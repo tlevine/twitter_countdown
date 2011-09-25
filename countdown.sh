@@ -11,7 +11,7 @@ hours=$(( ( $seconds_diff/3600 ) - ( $days * 24 ) ))
 
 #text="$1"
 #text="$days days" #, $hours hours"
-text="$days days, $hours hours"
+text="$days days, $hours hours until World Food Day http://ur1.ca/56tej"
 
 echo $text
 curl --basic --user $username:$password --data status="$text" "$url"
