@@ -5,7 +5,7 @@ format="xml"
 #url="http://api.twitter.com/1/statuses/update."$format
 url="http://api.supertweet.net/1/statuses/update."$format
 
-seconds_diff=$(( `date +%s -d "Oct 16, 2011 12:00:00 AM"`-`date +%s` ))
+seconds_diff=$(( `date +%s -d "Oct 16, 2011 12:00:00 AM GMT+12"`-`date +%s` ))
 days=$(( $seconds_diff/(24*3600) ))
 hours=$(( ( $seconds_diff/3600 ) - ( $days * 24 ) ))
 
